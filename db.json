@@ -1,0 +1,18 @@
+{
+  "residences": [
+    {
+      "id": "1",
+      "name": "residence aaa",
+      "address": "tunis",
+      "image": "../../assets/images/residence1.jpg",
+      "status": "disponible"
+    },
+    {
+      "id": "1",
+      "name": "residence aaa",
+      "address": "tunis",
+      "image": "../../assets/images/residence1.jpg",
+      "status": "disponible"
+    }
+  ]
+}

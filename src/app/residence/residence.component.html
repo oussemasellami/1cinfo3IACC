@@ -1,1 +1,40 @@
-<p>residence works!</p>
+<!--<table border="3">
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>address</td>
+        <td>image</td>
+        <td>status</td>
+    </tr>
+    <tr *ngFor="let r of listResidences" >
+        <td>{{r.id}}</td>
+        <td>{{r.name |uppercase}}</td>
+        <td>{{r.address}}</td>
+        <td> <img [src]="r.image" alt="" width="100" height="100">  </td>
+        <td>{{r.status}}</td>
+
+    </tr>
+</table>-->
+<br>
+<br>
+<label for="">Recherche:</label><input type="text" [(ngModel)]="search" />
+<br />
+<div class="row">
+  <div *ngFor="let r of searchbyname()" class="card m-3" style="width: 18rem">
+    <img [src]="r.image" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ r.name }}</h5>
+      <h5 class="card-title">{{ r.address }}</h5>
+      <p class="card-text">{{ r.status }}</p>
+      <a href="#" class="btn btn-primary" (click)="showlocation(r)"
+        >show location</a
+      >
+      <a href="#" class="btn btn-success" (click)="like(r)">like</a>
+      <a href="#" class="btn btn-danger" (click)="supprime(r.id)">Delete</a>
+      <a href="#" class="btn btn-block" [routerLink]="['/details',r.id]">Details</a>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-success" (click)="shownumber()">show number</button>
+la somme : {{ num }}
