@@ -11,7 +11,9 @@ import { ResidenceComponent } from './residence/residence.component';
 import { DetailsComponent } from './details/details.component';
 import { AppRoutingModule } from './app.routing.module'
 import {RouterModule, Routes} from '@angular/router';
-import { NotfoundComponent } from './notfound/notfound.component'
+import { NotfoundComponent } from './notfound/notfound.component';
+import { ProductComponent } from './product/product.component';
+import { DetailsproductComponent } from './detailsproduct/detailsproduct.component'
 
 
 
@@ -24,7 +26,9 @@ import { NotfoundComponent } from './notfound/notfound.component'
     HomeComponent,
     ResidenceComponent,
     DetailsComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ProductComponent,
+    DetailsproductComponent
   ],
   imports: [
     BrowserModule,

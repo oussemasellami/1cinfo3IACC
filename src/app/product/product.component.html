@@ -1,0 +1,19 @@
+<p>product works!</p>
+<div class="row">
+  <div
+    *ngFor="let r of listresidenceDataBase"
+    class="card m-3"
+    style="width: 18rem"
+  >
+    <div class="card-body">
+      <h5 class="card-title">{{ r.qt }}</h5>
+      <h5 class="card-title">{{ r.nom }}</h5>
+      <p class="card-text">{{ r.description }}</p>
+
+      <a href="#" class="btn btn-danger" (click)="supprime(r.id)">Delete</a>
+      <a href="#" class="btn btn-block" [routerLink]="['/detailsproduct', r.id]"
+        >Details</a
+      >
+    </div>
+  </div>
+</div>
