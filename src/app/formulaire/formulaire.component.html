@@ -1,0 +1,27 @@
+<p>formulaire works!</p>
+<div class="container">
+<form [formGroup]="addF">
+
+
+
+
+
+   <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Id</span>
+  </div>
+    <input type="text" formControlName="id" aria-label="Last name" class="form-control">
+    </div>
+    <div class=" alert alert-danger">
+
+    </div>
+    <br>
+    <input type="text" formControlName="name"><br>
+    <input type="text" formControlName="address"><br>
+    <input type="text" formControlName="image"><br>
+    <input type="text" formControlName="status"><br>
+
+
+    <button (click)="add()">save</button>
+</form>
+</div>

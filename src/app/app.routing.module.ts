@@ -7,6 +7,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { DetailsComponent } from './details/details.component';
 import { ProductComponent } from './product/product.component';
 import { DetailsproductComponent } from './detailsproduct/detailsproduct.component';
+import { FormulaireComponent } from './formulaire/formulaire.component';
 
 
 const routes:Routes=[
@@ -14,6 +15,7 @@ const routes:Routes=[
   {path:"home" ,component:HomeComponent},
     {path:"residence" ,component:ResidenceComponent},
      {path:"product" ,component:ProductComponent},
+     {path:"Addresidence" ,component:FormulaireComponent},
     {path:"details/:id" ,component:DetailsComponent},
      {path:"detailsproduct/:id" ,component:DetailsproductComponent},
     {path:"**",component:NotfoundComponent}

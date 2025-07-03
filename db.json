@@ -6,6 +6,20 @@
       "address": "tunis",
       "image": "../../assets/images/residence1.jpg",
       "status": "disponible"
+    },
+    {
+      "id": "2",
+      "name": "zeaz",
+      "address": "zeaa",
+      "image": "../../assets/images/residence1.jpg",
+      "status": "ezaea"
+    },
+    {
+      "id": "8",
+      "name": "ezae",
+      "address": "ezaea",
+      "image": "../../assets/images/residence1.jpg",
+      "status": "ezaeaz"
     }
   ],
   "products": []
