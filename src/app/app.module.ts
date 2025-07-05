@@ -14,7 +14,8 @@ import {RouterModule, Routes} from '@angular/router';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ProductComponent } from './product/product.component';
 import { DetailsproductComponent } from './detailsproduct/detailsproduct.component';
-import { FormulaireComponent } from './formulaire/formulaire.component'
+import { FormulaireComponent } from './formulaire/formulaire.component';
+import { UpdateResComponent } from './update-res/update-res.component'
 
 
 
@@ -30,7 +31,8 @@ import { FormulaireComponent } from './formulaire/formulaire.component'
     NotfoundComponent,
     ProductComponent,
     DetailsproductComponent,
-    FormulaireComponent
+    FormulaireComponent,
+    UpdateResComponent
   ],
   imports: [
     BrowserModule,

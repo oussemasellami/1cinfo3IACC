@@ -1,14 +1,22 @@
-<p>formulaire works!</p>
+<p>{{ idupdate }}</p>
 <div class="container">
   <form [formGroup]="addF">
     <!--<div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text">Id</span>
-  </div>
-    <input type="text" formControlName="id" aria-label="Last name" class="form-control">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Id</span>
+      </div>
+      <input
+        type="text"
+        formControlName="id"
+        aria-label="Last name"
+        class="form-control"
+      />
     </div>
-    <div class="alert alert-danger" *ngIf="addF.get('id')?.invalid && addF.get('id')?.touched">
-id is required
+    <div
+      class="alert alert-danger"
+      *ngIf="addF.get('id')?.invalid && addF.get('id')?.touched"
+    >
+      id is required
     </div>-->
 
     <div class="input-group">

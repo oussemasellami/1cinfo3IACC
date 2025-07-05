@@ -17,11 +17,11 @@ export class FormulaireComponent implements OnInit {
    ngOnInit(): void {
    this.addF=new FormGroup({
 
-  id: new FormControl('',Validators.required),
-  name: new FormControl('',Validators.required),
-  address: new FormControl('',Validators.required),
+  //id: new FormControl('',[Validators.required,Validators.pattern(/^[1-9]/)]),
+  name: new FormControl('',[Validators.required,Validators.pattern(/^[A-Z][a-z]/)]),
+  address: new FormControl('',[Validators.required,Validators.maxLength(10)]),
   image: new FormControl('../../assets/images/residence1.jpg',Validators.required),
-  status: new FormControl('',Validators.required)
+  status: new FormControl('',[Validators.required,Validators.pattern(/^disponible+$/)])
 
    })
   }

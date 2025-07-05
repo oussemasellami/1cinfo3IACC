@@ -8,6 +8,7 @@ import { DetailsComponent } from './details/details.component';
 import { ProductComponent } from './product/product.component';
 import { DetailsproductComponent } from './detailsproduct/detailsproduct.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
+import { UpdateResComponent } from './update-res/update-res.component';
 
 
 const routes:Routes=[
@@ -17,6 +18,7 @@ const routes:Routes=[
      {path:"product" ,component:ProductComponent},
      {path:"Addresidence" ,component:FormulaireComponent},
     {path:"details/:id" ,component:DetailsComponent},
+     {path:"update/:id" ,component:UpdateResComponent},
      {path:"detailsproduct/:id" ,component:DetailsproductComponent},
     {path:"**",component:NotfoundComponent}
 
